@@ -9,12 +9,30 @@
 /* Begin PBXBuildFile section */
 		2A21626E1EBDBBD600F0EE46 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A21626D1EBDBBD600F0EE46 /* main.m */; };
 		2A2162711EBDBBD600F0EE46 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2162701EBDBBD600F0EE46 /* AppDelegate.m */; };
-		2A2162741EBDBBD600F0EE46 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2162731EBDBBD600F0EE46 /* ViewController.m */; };
+		2A2162741EBDBBD600F0EE46 /* SYShopDetailManagerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2162731EBDBBD600F0EE46 /* SYShopDetailManagerController.m */; };
 		2A2162771EBDBBD600F0EE46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A2162751EBDBBD600F0EE46 /* Main.storyboard */; };
 		2A2162791EBDBBD600F0EE46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A2162781EBDBBD600F0EE46 /* Assets.xcassets */; };
 		2A21627C1EBDBBD600F0EE46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A21627A1EBDBBD600F0EE46 /* LaunchScreen.storyboard */; };
 		2A2162871EBDBBD600F0EE46 /* SYShopDetailAnimationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2162861EBDBBD600F0EE46 /* SYShopDetailAnimationTests.m */; };
 		2A2162921EBDBBD600F0EE46 /* SYShopDetailAnimationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2162911EBDBBD600F0EE46 /* SYShopDetailAnimationUITests.m */; };
+		2A2162A11EBDBC3500F0EE46 /* FistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2162A01EBDBC3500F0EE46 /* FistViewController.m */; };
+		2A2162A21EBDBC3500F0EE46 /* FistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2162A01EBDBC3500F0EE46 /* FistViewController.m */; };
+		2A2162A31EBDBC3500F0EE46 /* FistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2162A01EBDBC3500F0EE46 /* FistViewController.m */; };
+		2A2162A61EBDBC4600F0EE46 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2162A51EBDBC4600F0EE46 /* SecondViewController.m */; };
+		2A2162A71EBDBC4600F0EE46 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2162A51EBDBC4600F0EE46 /* SecondViewController.m */; };
+		2A2162A81EBDBC4600F0EE46 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2162A51EBDBC4600F0EE46 /* SecondViewController.m */; };
+		2A5AC5CC1EC14BBD000AAECA /* SYRefresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2A5AC5CB1EC14BBD000AAECA /* SYRefresh.bundle */; };
+		2A5AC5CD1EC14BBD000AAECA /* SYRefresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2A5AC5CB1EC14BBD000AAECA /* SYRefresh.bundle */; };
+		2A5AC5CE1EC14BBD000AAECA /* SYRefresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2A5AC5CB1EC14BBD000AAECA /* SYRefresh.bundle */; };
+		2A5AC5D61EC17597000AAECA /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5AC5D51EC17597000AAECA /* TestViewController.m */; };
+		2A5AC5D71EC17597000AAECA /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5AC5D51EC17597000AAECA /* TestViewController.m */; };
+		2A5AC5D81EC17597000AAECA /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5AC5D51EC17597000AAECA /* TestViewController.m */; };
+		2AABB8FB1EBFFF29005BEE73 /* UIScrollView+SYRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AABB8FA1EBFFF29005BEE73 /* UIScrollView+SYRefresh.m */; };
+		2AABB8FC1EBFFF29005BEE73 /* UIScrollView+SYRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AABB8FA1EBFFF29005BEE73 /* UIScrollView+SYRefresh.m */; };
+		2AABB8FD1EBFFF29005BEE73 /* UIScrollView+SYRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AABB8FA1EBFFF29005BEE73 /* UIScrollView+SYRefresh.m */; };
+		2AD2D2951EBFFF8300E395DE /* SYRefreshView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD2D2941EBFFF8300E395DE /* SYRefreshView.m */; };
+		2AD2D2961EBFFF8300E395DE /* SYRefreshView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD2D2941EBFFF8300E395DE /* SYRefreshView.m */; };
+		2AD2D2971EBFFF8300E395DE /* SYRefreshView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD2D2941EBFFF8300E395DE /* SYRefreshView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +57,8 @@
 		2A21626D1EBDBBD600F0EE46 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2A21626F1EBDBBD600F0EE46 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2A2162701EBDBBD600F0EE46 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		2A2162721EBDBBD600F0EE46 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		2A2162731EBDBBD600F0EE46 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2A2162721EBDBBD600F0EE46 /* SYShopDetailManagerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYShopDetailManagerController.h; sourceTree = "<group>"; };
+		2A2162731EBDBBD600F0EE46 /* SYShopDetailManagerController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYShopDetailManagerController.m; sourceTree = "<group>"; };
 		2A2162761EBDBBD600F0EE46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2A2162781EBDBBD600F0EE46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2A21627B1EBDBBD600F0EE46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +69,18 @@
 		2A21628D1EBDBBD600F0EE46 /* SYShopDetailAnimationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SYShopDetailAnimationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A2162911EBDBBD600F0EE46 /* SYShopDetailAnimationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYShopDetailAnimationUITests.m; sourceTree = "<group>"; };
 		2A2162931EBDBBD600F0EE46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A21629F1EBDBC3500F0EE46 /* FistViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FistViewController.h; sourceTree = "<group>"; };
+		2A2162A01EBDBC3500F0EE46 /* FistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FistViewController.m; sourceTree = "<group>"; };
+		2A2162A41EBDBC4600F0EE46 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		2A2162A51EBDBC4600F0EE46 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		2A5AC5CB1EC14BBD000AAECA /* SYRefresh.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SYRefresh.bundle; sourceTree = "<group>"; };
+		2A5AC5D41EC17597000AAECA /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		2A5AC5D51EC17597000AAECA /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		2AABB8F91EBFFF29005BEE73 /* UIScrollView+SYRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+SYRefresh.h"; sourceTree = "<group>"; };
+		2AABB8FA1EBFFF29005BEE73 /* UIScrollView+SYRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+SYRefresh.m"; sourceTree = "<group>"; };
+		2AD2D2931EBFFF8300E395DE /* SYRefreshView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYRefreshView.h; sourceTree = "<group>"; };
+		2AD2D2941EBFFF8300E395DE /* SYRefreshView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYRefreshView.m; sourceTree = "<group>"; };
+		2AD2D2A21EC0147300E395DE /* SYSYRefreshConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYSYRefreshConst.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +131,22 @@
 		2A21626B1EBDBBD600F0EE46 /* SYShopDetailAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				2A5AC5CB1EC14BBD000AAECA /* SYRefresh.bundle */,
 				2A21626F1EBDBBD600F0EE46 /* AppDelegate.h */,
 				2A2162701EBDBBD600F0EE46 /* AppDelegate.m */,
-				2A2162721EBDBBD600F0EE46 /* ViewController.h */,
-				2A2162731EBDBBD600F0EE46 /* ViewController.m */,
+				2A2162721EBDBBD600F0EE46 /* SYShopDetailManagerController.h */,
+				2A2162731EBDBBD600F0EE46 /* SYShopDetailManagerController.m */,
+				2AABB8F91EBFFF29005BEE73 /* UIScrollView+SYRefresh.h */,
+				2AABB8FA1EBFFF29005BEE73 /* UIScrollView+SYRefresh.m */,
+				2AD2D2931EBFFF8300E395DE /* SYRefreshView.h */,
+				2AD2D2941EBFFF8300E395DE /* SYRefreshView.m */,
+				2AD2D2A21EC0147300E395DE /* SYSYRefreshConst.h */,
+				2A21629F1EBDBC3500F0EE46 /* FistViewController.h */,
+				2A2162A01EBDBC3500F0EE46 /* FistViewController.m */,
+				2A2162A41EBDBC4600F0EE46 /* SecondViewController.h */,
+				2A2162A51EBDBC4600F0EE46 /* SecondViewController.m */,
+				2A5AC5D41EC17597000AAECA /* TestViewController.h */,
+				2A5AC5D51EC17597000AAECA /* TestViewController.m */,
 				2A2162751EBDBBD600F0EE46 /* Main.storyboard */,
 				2A2162781EBDBBD600F0EE46 /* Assets.xcassets */,
 				2A21627A1EBDBBD600F0EE46 /* LaunchScreen.storyboard */,
@@ -249,6 +291,7 @@
 				2A21627C1EBDBBD600F0EE46 /* LaunchScreen.storyboard in Resources */,
 				2A2162791EBDBBD600F0EE46 /* Assets.xcassets in Resources */,
 				2A2162771EBDBBD600F0EE46 /* Main.storyboard in Resources */,
+				2A5AC5CC1EC14BBD000AAECA /* SYRefresh.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +299,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A5AC5CD1EC14BBD000AAECA /* SYRefresh.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +307,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A5AC5CE1EC14BBD000AAECA /* SYRefresh.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,9 +318,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A2162741EBDBBD600F0EE46 /* ViewController.m in Sources */,
+				2A2162A61EBDBC4600F0EE46 /* SecondViewController.m in Sources */,
+				2A2162A11EBDBC3500F0EE46 /* FistViewController.m in Sources */,
+				2AD2D2951EBFFF8300E395DE /* SYRefreshView.m in Sources */,
+				2A2162741EBDBBD600F0EE46 /* SYShopDetailManagerController.m in Sources */,
 				2A2162711EBDBBD600F0EE46 /* AppDelegate.m in Sources */,
 				2A21626E1EBDBBD600F0EE46 /* main.m in Sources */,
+				2A5AC5D61EC17597000AAECA /* TestViewController.m in Sources */,
+				2AABB8FB1EBFFF29005BEE73 /* UIScrollView+SYRefresh.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,7 +333,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A5AC5D71EC17597000AAECA /* TestViewController.m in Sources */,
+				2A2162A71EBDBC4600F0EE46 /* SecondViewController.m in Sources */,
+				2A2162A21EBDBC3500F0EE46 /* FistViewController.m in Sources */,
+				2AD2D2961EBFFF8300E395DE /* SYRefreshView.m in Sources */,
 				2A2162871EBDBBD600F0EE46 /* SYShopDetailAnimationTests.m in Sources */,
+				2AABB8FC1EBFFF29005BEE73 /* UIScrollView+SYRefresh.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,7 +346,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A5AC5D81EC17597000AAECA /* TestViewController.m in Sources */,
+				2A2162A81EBDBC4600F0EE46 /* SecondViewController.m in Sources */,
+				2A2162A31EBDBC3500F0EE46 /* FistViewController.m in Sources */,
+				2AD2D2971EBFFF8300E395DE /* SYRefreshView.m in Sources */,
 				2A2162921EBDBBD600F0EE46 /* SYShopDetailAnimationUITests.m in Sources */,
+				2AABB8FD1EBFFF29005BEE73 /* UIScrollView+SYRefresh.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -509,6 +569,7 @@
 				2A2162981EBDBBD600F0EE46 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2A2162991EBDBBD600F0EE46 /* Build configuration list for PBXNativeTarget "SYShopDetailAnimationTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +578,7 @@
 				2A21629B1EBDBBD600F0EE46 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2A21629C1EBDBBD600F0EE46 /* Build configuration list for PBXNativeTarget "SYShopDetailAnimationUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +587,7 @@
 				2A21629E1EBDBBD600F0EE46 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

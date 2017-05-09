@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  FistViewController.h
 //  SYShopDetailAnimation
 //
 //  Created by shusy on 2017/5/6.
@@ -8,8 +8,5 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
-
+@interface FistViewController : UIViewController
 @end
-
