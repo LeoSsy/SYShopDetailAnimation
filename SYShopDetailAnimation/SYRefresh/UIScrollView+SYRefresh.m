@@ -13,6 +13,8 @@
 @implementation UIScrollView (SYRefresh)
 
 static const char SYRefreshHeaderKey = '\0';
+static const char SYRefreshFooterKey = '\0';
+
 -(void)setSy_header:(SYRefreshView *)sy_header
 {
     if (sy_header != self.sy_header) {
@@ -28,7 +30,6 @@ static const char SYRefreshHeaderKey = '\0';
     return header;
 }
 
-static const char SYRefreshFooterKey = '\0';
 -(void)setSy_footer:(SYRefreshView *)sy_footer
 {
     if (sy_footer != self.sy_footer) {

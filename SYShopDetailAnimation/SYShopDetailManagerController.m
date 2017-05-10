@@ -33,7 +33,6 @@
 {
     if (!_firstScrollView) {
         _firstScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
-        _firstScrollView.delegate = self;
         _firstScrollView.contentSize = CGSizeMake(0, self.view.frame.size.height);
         _firstScrollView.sy_footer = [SYRefreshView refreshWithHeight:55 isFooter:YES completionBlock:^{
             dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.05 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
@@ -73,7 +72,6 @@
     if (!_secondScrollView) {
         _secondScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height+40, self.view.frame.size.width, self.view.frame.size.height)];
         _secondScrollView.backgroundColor = [UIColor clearColor];
-        _secondScrollView.delegate = self;
         _secondScrollView.contentSize = CGSizeMake(0, self.view.frame.size.height);
         _secondScrollView.sy_header = [SYRefreshView refreshWithHeight:40 isFooter:NO completionBlock:^{
             dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.05 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{

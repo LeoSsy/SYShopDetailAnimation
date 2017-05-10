@@ -46,14 +46,22 @@ typedef void (^SYRefreshViewbeginRefreshingCompletionBlock)();
 - (void)beginRefreshing;
 /**结束刷新*/
 - (void)endRefreshing;
+/***标题控件*/
+@property(nonatomic,strong)UILabel *titleL;
 /***是否添加到底部*/
 @property(nonatomic ,assign) BOOL isFooter;
 /***箭头和圆圈右边距离标题的间距*/
 @property(nonatomic ,assign) CGFloat arrowRightInset;
+/***设置控件的高度*/
+@property(nonatomic ,assign) CGFloat sy_height;
 /***是否隐藏箭头*/
 @property(nonatomic ,assign,getter=isHiddenArrow) BOOL hiddenArrow;
 /***是否隐藏菊花*/
 @property(nonatomic ,assign,getter=isHiddenIndictorView) BOOL hiddenIndictorView;
+/***设置头部刷新状态的回调*/
+@property(nonatomic ,copy) SYRefreshViewbeginRefreshingCompletionBlock beginBlock;
+/***设置尾部刷新状态的回调*/
+@property(nonatomic ,copy) SYRefreshViewbeginRefreshingCompletionBlock endBlock;
 /**初始化方法*/
 - (void)prepare;
 /**监听偏移量*/
