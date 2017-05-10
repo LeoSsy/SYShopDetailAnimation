@@ -35,39 +35,20 @@
         _firstScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
         _firstScrollView.delegate = self;
         _firstScrollView.contentSize = CGSizeMake(0, self.view.frame.size.height);
-        _firstScrollView.sy_footer = [SYRefreshView refreshWithHeight:40 isFooter:YES completionBlock:^{
+        _firstScrollView.sy_footer = [SYRefreshView refreshWithHeight:55 isFooter:YES completionBlock:^{
             dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.05 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
                 [_firstScrollView.sy_footer endRefreshing];
-                CGRect frame = self.secondScrollView.frame;
-                frame.origin.y = 0;
-                [UIView animateWithDuration:0.35 delay:0.f options:UIViewAnimationOptionCurveEaseInOut animations:^{
-                    self.secondScrollView.frame = frame;
-                } completion:^(BOOL finished) {
-                    if (self.switchViewBlock) {
-                        self.switchViewBlock(true);
-                    }
-                }];
+                [self showSecondController];
             });
         }];
-        _firstScrollView.sy_footer.hiddenArrow = YES;
-        
         {
             _firstScrollView.sy_header = [SYRefreshView refreshWithHeight:40 isFooter:NO completionBlock:^{
                 dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
                     [_firstScrollView.sy_header endRefreshing];
-                    CGRect frame = self.secondScrollView.frame;
-                    frame.origin.y = self.view.frame.size.height+45;
-                    [UIView animateWithDuration:0.35 delay:0.f options:UIViewAnimationOptionCurveEaseInOut animations:^{
-                        self.secondScrollView.frame = frame;
-                    } completion:^(BOOL finished) {
-                        if (self.switchViewBlock) {
-                            self.switchViewBlock(false);
-                        }
-                    }];
+                   
                 });
             }];
-            
-            SYTitleItem *item1 = [SYTitleItem itemWithTitle:@"下拉回到商品详情" color:[UIColor orangeColor]];
+            SYTitleItem *item1 = [SYTitleItem itemWithTitle:@"下拉回到商品详情" color:[UIColor redColor]];
             SYTitleItem *item2 = [SYTitleItem itemWithTitle:@"释放回到商品详情" color:[UIColor yellowColor]];
             SYTitleItem *item3 = [SYTitleItem itemWithTitle:@"更新中..." color:[UIColor brownColor]];
             [_firstScrollView.sy_header setHeaderForState:SYRefreshViewStateIdle item:item1];
@@ -75,14 +56,13 @@
             [_firstScrollView.sy_header setHeaderForState:SYRefreshViewRefreshing item:item3];
         }
 
-//        SYTitleItem *item1 = [SYTitleItem itemWithTitle:@"上拉查看图文详情" color:[UIColor redColor]];
-//        SYTitleItem *item2 = [SYTitleItem itemWithTitle:@"释放查看图文详情" color:[UIColor greenColor]];
-//        SYTitleItem *item3 = [SYTitleItem itemWithTitle:@"" color:[UIColor purpleColor]];
-//        _firstScrollView.sy_footer.hiddenArrow = YES;
-//        _firstScrollView.sy_footer.hiddenIndictorView = YES;
-//        [_firstScrollView.sy_footer setHeaderForState:SYRefreshViewStateIdle item:item1];
-//        [_firstScrollView.sy_footer setHeaderForState:SYRefreshViewPulling item:item2];
-//        [_firstScrollView.sy_footer setHeaderForState:SYRefreshViewRefreshing item:item3];
+        SYTitleItem *item1 = [SYTitleItem itemWithTitle:@"上拉查看图文详情" color:[UIColor redColor]];
+        SYTitleItem *item2 = [SYTitleItem itemWithTitle:@"释放查看图文详情" color:[UIColor greenColor]];
+        SYTitleItem *item3 = [SYTitleItem itemWithTitle:@"" color:[UIColor purpleColor]];
+        _firstScrollView.sy_footer.hiddenArrow = YES;
+        [_firstScrollView.sy_footer setHeaderForState:SYRefreshViewStateIdle item:item1];
+        [_firstScrollView.sy_footer setHeaderForState:SYRefreshViewPulling item:item2];
+        [_firstScrollView.sy_footer setHeaderForState:SYRefreshViewRefreshing item:item3];
           [self.view addSubview:_firstScrollView];
     }
     return _firstScrollView;
@@ -98,15 +78,7 @@
         _secondScrollView.sy_header = [SYRefreshView refreshWithHeight:40 isFooter:NO completionBlock:^{
             dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.05 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
                 [_secondScrollView.sy_header endRefreshing];
-                CGRect frame = self.secondScrollView.frame;
-                frame.origin.y = self.view.frame.size.height+45;
-                [UIView animateWithDuration:0.35 delay:0.f options:UIViewAnimationOptionCurveEaseInOut animations:^{
-                    self.secondScrollView.frame = frame;
-                } completion:^(BOOL finished) {
-                    if (self.switchViewBlock) {
-                        self.switchViewBlock(false);
-                    }
-                }];
+                [self dismissSecondController];
             });
         }];
         SYTitleItem *item1 = [SYTitleItem itemWithTitle:@"下拉回到商品详情" color:[UIColor orangeColor]];
@@ -120,9 +92,37 @@
     return _secondScrollView;
 }
 
+- (void)showSecondController
+{
+    self.secondScrollView.sy_header.hidden = YES;
+    CGRect frame = self.secondScrollView.frame;
+    frame.origin.y = 0;
+    [UIView animateWithDuration:0.35 delay:0.f options:UIViewAnimationOptionCurveEaseInOut animations:^{
+        self.secondScrollView.frame = frame;
+    } completion:^(BOOL finished) {
+        self.secondScrollView.sy_header.hidden = NO;
+        if (self.switchViewBlock) {
+            self.switchViewBlock(true);
+        }
+    }];
+}
+
+- (void)dismissSecondController
+{
+    CGRect frame = self.secondScrollView.frame;
+    frame.origin.y = self.view.frame.size.height;
+    [UIView animateWithDuration:0.35 delay:0.f options:UIViewAnimationOptionCurveEaseInOut animations:^{
+        self.secondScrollView.frame = frame;
+    } completion:^(BOOL finished) {
+        if (self.switchViewBlock) {
+            self.switchViewBlock(false);
+        }
+    }];
+}
+
 - (void)prepareController
 {
-    self.view.backgroundColor = [UIColor whiteColor];
+    self.view.backgroundColor = [UIColor clearColor];
     _contentVc = [self prepareContentController];
     _detailVc = [self prepareDetailController];
     if (_contentVc==nil) {
