@@ -21,18 +21,18 @@
 		2A2162A61EBDBC4600F0EE46 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2162A51EBDBC4600F0EE46 /* SecondViewController.m */; };
 		2A2162A71EBDBC4600F0EE46 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2162A51EBDBC4600F0EE46 /* SecondViewController.m */; };
 		2A2162A81EBDBC4600F0EE46 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2162A51EBDBC4600F0EE46 /* SecondViewController.m */; };
-		2A5AC5CC1EC14BBD000AAECA /* SYRefresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2A5AC5CB1EC14BBD000AAECA /* SYRefresh.bundle */; };
-		2A5AC5CD1EC14BBD000AAECA /* SYRefresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2A5AC5CB1EC14BBD000AAECA /* SYRefresh.bundle */; };
-		2A5AC5CE1EC14BBD000AAECA /* SYRefresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2A5AC5CB1EC14BBD000AAECA /* SYRefresh.bundle */; };
 		2A5AC5D61EC17597000AAECA /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5AC5D51EC17597000AAECA /* TestViewController.m */; };
 		2A5AC5D71EC17597000AAECA /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5AC5D51EC17597000AAECA /* TestViewController.m */; };
 		2A5AC5D81EC17597000AAECA /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5AC5D51EC17597000AAECA /* TestViewController.m */; };
-		2AABB8FB1EBFFF29005BEE73 /* UIScrollView+SYRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AABB8FA1EBFFF29005BEE73 /* UIScrollView+SYRefresh.m */; };
-		2AABB8FC1EBFFF29005BEE73 /* UIScrollView+SYRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AABB8FA1EBFFF29005BEE73 /* UIScrollView+SYRefresh.m */; };
-		2AABB8FD1EBFFF29005BEE73 /* UIScrollView+SYRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AABB8FA1EBFFF29005BEE73 /* UIScrollView+SYRefresh.m */; };
-		2AD2D2951EBFFF8300E395DE /* SYRefreshView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD2D2941EBFFF8300E395DE /* SYRefreshView.m */; };
-		2AD2D2961EBFFF8300E395DE /* SYRefreshView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD2D2941EBFFF8300E395DE /* SYRefreshView.m */; };
-		2AD2D2971EBFFF8300E395DE /* SYRefreshView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD2D2941EBFFF8300E395DE /* SYRefreshView.m */; };
+		2A5AC6241EC2A497000AAECA /* SYRefresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2A5AC61E1EC2A497000AAECA /* SYRefresh.bundle */; };
+		2A5AC6251EC2A497000AAECA /* SYRefresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2A5AC61E1EC2A497000AAECA /* SYRefresh.bundle */; };
+		2A5AC6261EC2A497000AAECA /* SYRefresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2A5AC61E1EC2A497000AAECA /* SYRefresh.bundle */; };
+		2A5AC6271EC2A497000AAECA /* SYRefreshView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5AC6201EC2A497000AAECA /* SYRefreshView.m */; };
+		2A5AC6281EC2A497000AAECA /* SYRefreshView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5AC6201EC2A497000AAECA /* SYRefreshView.m */; };
+		2A5AC6291EC2A497000AAECA /* SYRefreshView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5AC6201EC2A497000AAECA /* SYRefreshView.m */; };
+		2A5AC62A1EC2A497000AAECA /* UIScrollView+SYRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5AC6231EC2A497000AAECA /* UIScrollView+SYRefresh.m */; };
+		2A5AC62B1EC2A497000AAECA /* UIScrollView+SYRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5AC6231EC2A497000AAECA /* UIScrollView+SYRefresh.m */; };
+		2A5AC62C1EC2A497000AAECA /* UIScrollView+SYRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5AC6231EC2A497000AAECA /* UIScrollView+SYRefresh.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,14 +73,14 @@
 		2A2162A01EBDBC3500F0EE46 /* FistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FistViewController.m; sourceTree = "<group>"; };
 		2A2162A41EBDBC4600F0EE46 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		2A2162A51EBDBC4600F0EE46 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
-		2A5AC5CB1EC14BBD000AAECA /* SYRefresh.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SYRefresh.bundle; sourceTree = "<group>"; };
 		2A5AC5D41EC17597000AAECA /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
 		2A5AC5D51EC17597000AAECA /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
-		2AABB8F91EBFFF29005BEE73 /* UIScrollView+SYRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+SYRefresh.h"; sourceTree = "<group>"; };
-		2AABB8FA1EBFFF29005BEE73 /* UIScrollView+SYRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+SYRefresh.m"; sourceTree = "<group>"; };
-		2AD2D2931EBFFF8300E395DE /* SYRefreshView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYRefreshView.h; sourceTree = "<group>"; };
-		2AD2D2941EBFFF8300E395DE /* SYRefreshView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYRefreshView.m; sourceTree = "<group>"; };
-		2AD2D2A21EC0147300E395DE /* SYSYRefreshConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYSYRefreshConst.h; sourceTree = "<group>"; };
+		2A5AC61E1EC2A497000AAECA /* SYRefresh.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SYRefresh.bundle; sourceTree = "<group>"; };
+		2A5AC61F1EC2A497000AAECA /* SYRefreshView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYRefreshView.h; sourceTree = "<group>"; };
+		2A5AC6201EC2A497000AAECA /* SYRefreshView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYRefreshView.m; sourceTree = "<group>"; };
+		2A5AC6211EC2A497000AAECA /* SYSYRefreshConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYSYRefreshConst.h; sourceTree = "<group>"; };
+		2A5AC6221EC2A497000AAECA /* UIScrollView+SYRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+SYRefresh.h"; sourceTree = "<group>"; };
+		2A5AC6231EC2A497000AAECA /* UIScrollView+SYRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+SYRefresh.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,16 +131,11 @@
 		2A21626B1EBDBBD600F0EE46 /* SYShopDetailAnimation */ = {
 			isa = PBXGroup;
 			children = (
-				2A5AC5CB1EC14BBD000AAECA /* SYRefresh.bundle */,
+				2A5AC61D1EC2A497000AAECA /* SYRefresh */,
 				2A21626F1EBDBBD600F0EE46 /* AppDelegate.h */,
 				2A2162701EBDBBD600F0EE46 /* AppDelegate.m */,
 				2A2162721EBDBBD600F0EE46 /* SYShopDetailManagerController.h */,
 				2A2162731EBDBBD600F0EE46 /* SYShopDetailManagerController.m */,
-				2AABB8F91EBFFF29005BEE73 /* UIScrollView+SYRefresh.h */,
-				2AABB8FA1EBFFF29005BEE73 /* UIScrollView+SYRefresh.m */,
-				2AD2D2931EBFFF8300E395DE /* SYRefreshView.h */,
-				2AD2D2941EBFFF8300E395DE /* SYRefreshView.m */,
-				2AD2D2A21EC0147300E395DE /* SYSYRefreshConst.h */,
 				2A21629F1EBDBC3500F0EE46 /* FistViewController.h */,
 				2A2162A01EBDBC3500F0EE46 /* FistViewController.m */,
 				2A2162A41EBDBC4600F0EE46 /* SecondViewController.h */,
@@ -180,6 +175,19 @@
 				2A2162931EBDBBD600F0EE46 /* Info.plist */,
 			);
 			path = SYShopDetailAnimationUITests;
+			sourceTree = "<group>";
+		};
+		2A5AC61D1EC2A497000AAECA /* SYRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				2A5AC61E1EC2A497000AAECA /* SYRefresh.bundle */,
+				2A5AC61F1EC2A497000AAECA /* SYRefreshView.h */,
+				2A5AC6201EC2A497000AAECA /* SYRefreshView.m */,
+				2A5AC6211EC2A497000AAECA /* SYSYRefreshConst.h */,
+				2A5AC6221EC2A497000AAECA /* UIScrollView+SYRefresh.h */,
+				2A5AC6231EC2A497000AAECA /* UIScrollView+SYRefresh.m */,
+			);
+			path = SYRefresh;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,7 +299,7 @@
 				2A21627C1EBDBBD600F0EE46 /* LaunchScreen.storyboard in Resources */,
 				2A2162791EBDBBD600F0EE46 /* Assets.xcassets in Resources */,
 				2A2162771EBDBBD600F0EE46 /* Main.storyboard in Resources */,
-				2A5AC5CC1EC14BBD000AAECA /* SYRefresh.bundle in Resources */,
+				2A5AC6241EC2A497000AAECA /* SYRefresh.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,7 +307,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A5AC5CD1EC14BBD000AAECA /* SYRefresh.bundle in Resources */,
+				2A5AC6251EC2A497000AAECA /* SYRefresh.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,7 +315,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A5AC5CE1EC14BBD000AAECA /* SYRefresh.bundle in Resources */,
+				2A5AC6261EC2A497000AAECA /* SYRefresh.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,13 +327,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A2162A61EBDBC4600F0EE46 /* SecondViewController.m in Sources */,
+				2A5AC62A1EC2A497000AAECA /* UIScrollView+SYRefresh.m in Sources */,
 				2A2162A11EBDBC3500F0EE46 /* FistViewController.m in Sources */,
-				2AD2D2951EBFFF8300E395DE /* SYRefreshView.m in Sources */,
+				2A5AC6271EC2A497000AAECA /* SYRefreshView.m in Sources */,
 				2A2162741EBDBBD600F0EE46 /* SYShopDetailManagerController.m in Sources */,
 				2A2162711EBDBBD600F0EE46 /* AppDelegate.m in Sources */,
 				2A21626E1EBDBBD600F0EE46 /* main.m in Sources */,
 				2A5AC5D61EC17597000AAECA /* TestViewController.m in Sources */,
-				2AABB8FB1EBFFF29005BEE73 /* UIScrollView+SYRefresh.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,10 +343,10 @@
 			files = (
 				2A5AC5D71EC17597000AAECA /* TestViewController.m in Sources */,
 				2A2162A71EBDBC4600F0EE46 /* SecondViewController.m in Sources */,
+				2A5AC6281EC2A497000AAECA /* SYRefreshView.m in Sources */,
 				2A2162A21EBDBC3500F0EE46 /* FistViewController.m in Sources */,
-				2AD2D2961EBFFF8300E395DE /* SYRefreshView.m in Sources */,
 				2A2162871EBDBBD600F0EE46 /* SYShopDetailAnimationTests.m in Sources */,
-				2AABB8FC1EBFFF29005BEE73 /* UIScrollView+SYRefresh.m in Sources */,
+				2A5AC62B1EC2A497000AAECA /* UIScrollView+SYRefresh.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,10 +356,10 @@
 			files = (
 				2A5AC5D81EC17597000AAECA /* TestViewController.m in Sources */,
 				2A2162A81EBDBC4600F0EE46 /* SecondViewController.m in Sources */,
+				2A5AC6291EC2A497000AAECA /* SYRefreshView.m in Sources */,
 				2A2162A31EBDBC3500F0EE46 /* FistViewController.m in Sources */,
-				2AD2D2971EBFFF8300E395DE /* SYRefreshView.m in Sources */,
 				2A2162921EBDBBD600F0EE46 /* SYShopDetailAnimationUITests.m in Sources */,
-				2AABB8FD1EBFFF29005BEE73 /* UIScrollView+SYRefresh.m in Sources */,
+				2A5AC62C1EC2A497000AAECA /* UIScrollView+SYRefresh.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

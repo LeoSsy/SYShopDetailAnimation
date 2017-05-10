@@ -54,7 +54,10 @@ typedef void (^SYRefreshViewbeginRefreshingCompletionBlock)();
 @property(nonatomic ,assign,getter=isHiddenArrow) BOOL hiddenArrow;
 /***是否隐藏菊花*/
 @property(nonatomic ,assign,getter=isHiddenIndictorView) BOOL hiddenIndictorView;
+/**初始化方法*/
 - (void)prepare;
+/**监听偏移量*/
+- (void)scrollViewDidScrollChange;
 @end
 
 @interface UIView(SY)

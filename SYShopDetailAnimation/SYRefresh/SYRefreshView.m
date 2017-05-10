@@ -8,6 +8,7 @@
 
 #import "SYRefreshView.h"
 #import "SYSYRefreshConst.h"
+#import <objc/runtime.h>
 
 @implementation SYTitleItem
 + (instancetype)itemWithTitle:(NSString*)title color:(UIColor*)color
@@ -35,9 +36,11 @@
 @property(nonatomic,strong)UIImageView *arrowView;
 /***添加到的scrollview*/
 @property(nonatomic,strong)UIScrollView *scrollview;
+/***拖拽手势*/
+@property(nonatomic,strong) UIPanGestureRecognizer *pan;
 /***设置控件的高度*/
 @property(nonatomic ,assign) CGFloat sy_height;
-/***设置控件的状态*/
+/***控件当前的状态*/
 @property(nonatomic ,assign) SYRefreshViewState state;
 /***记录上一次控件的状态*/
 @property(nonatomic ,assign) SYRefreshViewState lastState;
@@ -45,8 +48,6 @@
 @property(nonatomic ,copy) SYRefreshViewbeginRefreshingCompletionBlock beginBlock;
 /***设置尾部刷新状态的回调*/
 @property(nonatomic ,copy) SYRefreshViewbeginRefreshingCompletionBlock endBlock;
-/**监听偏移量*/
-- (void)scrollViewContentOffsetDidChange:(NSDictionary *)change;
 /***记录控件不同的状态的样式*/
 @property(nonatomic ,strong) SYTitleItem *headerNormalItem;
 @property(nonatomic ,strong) SYTitleItem *headerPullingItem;
@@ -63,7 +64,8 @@
         _titleL.text = SYRefreshViewStateIdleTitle;
         _titleL.font = SYRefreshViewTitleFont;
         _titleL.backgroundColor = [UIColor clearColor];
-        [self addSubview:self.titleL];
+        _titleL.hidden = NO;
+        [self addSubview:_titleL];
     }
     return _titleL;
 }
@@ -90,7 +92,6 @@
     return _arrowView;
 }
 
-/***创建刷新控件*/
 + (SYRefreshView*)refreshWithHeight:(CGFloat)height isFooter:(BOOL)isFooter completionBlock:(SYRefreshViewbeginRefreshingCompletionBlock)completionBlock;
 {
     SYRefreshView *view = [[SYRefreshView alloc] init];
@@ -132,8 +133,23 @@
     }
     self.width = newSuperview.width;
     self.scrollview = (UIScrollView*)newSuperview;
+    self.pan = self.scrollview.panGestureRecognizer;
+    self.scrollview.alwaysBounceVertical = YES;
     [self removeObservers];
     [self addObservers];
+}
+
+- (void)didAddSubview:(UIView *)subview
+{
+    [super didAddSubview:subview];
+    UIViewController *currentVc = [self currentViewController];
+    if (currentVc.automaticallyAdjustsScrollViewInsets) {
+        if ([currentVc.parentViewController isKindOfClass:[UINavigationController class]]) {
+            UIEdgeInsets oldInsets = self.scrollview.contentInset;
+            oldInsets.top = SYNavHeight;
+            self.scrollview.contentInset = oldInsets;
+        }
+    }
 }
 
 - (void)setArrowRightInset:(CGFloat)arrowRightInset
@@ -195,7 +211,6 @@
 - (void)removeObservers
 {
     [self.superview removeObserver:self forKeyPath:SYKeyPathContentOffset];
-    [self.superview removeObserver:self forKeyPath:SYKeyPathContentSize];
 }
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context
@@ -203,30 +218,45 @@
     if (!self.userInteractionEnabled) return;
     if (self.hidden)  return;
     if ([keyPath isEqualToString:SYKeyPathContentOffset]) {
-        [self scrollViewContentOffsetDidChange:change];
+        [self scrollViewDidScrollChange];
+    }else if ([keyPath isEqualToString:SYKeyPathPanState]){
+        
     }
 }
 
-- (void)scrollViewContentOffsetDidChange:(NSDictionary *)change{
+- (void)scrollViewDidScrollChange
+{
+    NSLog(@"scrollViewDidScrollChange");
+    self.titleL.hidden = NO;
+    // 正在刷新状态
     if (self.state == SYRefreshViewRefreshing) return;
+    // 当前的contentOffset
     CGFloat offsetY = self.scrollview.contentOffset.y;
+    // 头部控件刚好出现的offsetY
+    CGFloat happenOffsetY = - self.scrollview.contentInset.top;
+    // 如果是向上滚动到看不见头部控件，直接返回
+    if (!self.isFooter) {
+        if (offsetY > happenOffsetY) return;
+    }
+    CGFloat normal2pullingOffsetY = happenOffsetY - self.height;
+//    CGFloat pullingPercent = (happenOffsetY - offsetY) / self.height;
     if (self.scrollview.isDragging) {
         self.alpha = 1.0;
         if (!self.isFooter) {
-            if (self.state == SYRefreshViewStateIdle&&offsetY<-self.height) { //负数 往下拉
+            if (self.state == SYRefreshViewStateIdle&&offsetY<normal2pullingOffsetY) { //负数 往下拉
                 self.state = SYRefreshViewPulling;
                 [UIView animateWithDuration:SYAnimationDuration animations:^{
                     self.arrowView.transform = CGAffineTransformMakeRotation(0.000001 - M_PI);
                 }];
-            }else if (self.state == SYRefreshViewPulling&&offsetY>-self.height){//负数 往回弹
+            }else if (self.state == SYRefreshViewPulling&&offsetY>normal2pullingOffsetY){//负数 往回弹
                 self.state = SYRefreshViewStateIdle;
                 [UIView animateWithDuration:SYAnimationDuration animations:^{
                     self.arrowView.transform = CGAffineTransformIdentity;
                 }];            }
         }else{
-            if (self.state == SYRefreshViewStateIdle&&offsetY>self.height) { //正数 往上拉
+            if (self.state == SYRefreshViewStateIdle&&offsetY>normal2pullingOffsetY) { //正数 往上拉
                 self.state = SYRefreshViewPulling;
-            }else if (self.state == SYRefreshViewPulling&&offsetY<self.height){//负数 往下弹
+            }else if (self.state == SYRefreshViewPulling&&offsetY<normal2pullingOffsetY){//负数 往下弹
                 self.state = SYRefreshViewStateIdle;
             }
         }
@@ -235,6 +265,7 @@
     }else{
     }
 }
+
 
 - (void)setHeaderForState:(SYRefreshViewState)state item:(SYTitleItem*)item;
 {
@@ -248,7 +279,6 @@
         self.headerRefreshingItem = item;
     }
 }
-
 
 - (void)setState:(SYRefreshViewState)state
 {
@@ -269,7 +299,6 @@
     [self setNeedsLayout];
 }
 
-
 - (void)beginRefreshing
 {
     self.state = SYRefreshViewRefreshing;
@@ -286,7 +315,6 @@
     }else{ //尾部刷新处理
         //正在刷新中 不需要重新设置偏移量
         [UIView animateWithDuration:SYAnimationDuration animations:^{
-            self.scrollview.contentOffset = CGPointMake(0, self.height+self.scrollview.contentInset.top);
             self.scrollview.contentInset = UIEdgeInsetsMake(self.scrollview.contentInset.top, self.scrollview.contentInset.left, self.scrollview.contentInset.bottom+self.height, self.scrollview.contentInset.right);
         }completion:^(BOOL finished) {
             [self excuteBlock];
@@ -310,6 +338,7 @@
         [UIView animateWithDuration:SYAnimationDuration animations:^{
             self.scrollview.contentInset =  UIEdgeInsetsMake(self.scrollview.contentInset.top, self.scrollview.contentInset.left, self.scrollview.contentInset.bottom-self.height, self.scrollview.contentInset.right);
         }completion:^(BOOL finished) {
+            self.titleL.hidden = YES;
             self.state = SYRefreshViewStateIdle;
             if (!self.isHiddenArrow) {
                 self.arrowView.hidden = NO;
@@ -329,6 +358,22 @@
     });
 }
 
+
+/**
+ 获取当前视图所属的控制器
+ @return  当前视图所属的控制器
+ */
+-(UIViewController *)currentViewController{
+    UIViewController *vc;
+    for (UIView* next = [self superview]; next; next = next.superview) {
+        UIResponder* nextResponder = [next nextResponder];
+        if ([nextResponder isKindOfClass:[objc_getClass("UIViewController") class]] ) {
+            vc=(UIViewController*)nextResponder;
+            return vc;
+        }
+    }
+    return vc;
+}
 @end
 
 @implementation UIView(SY)
