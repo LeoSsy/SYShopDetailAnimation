@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2A2162681EBDBBD600F0EE46"
-               BuildableName = "SYShopDetailAnimation.app"
-               BlueprintName = "SYShopDetailAnimation"
-               ReferencedContainer = "container:SYShopDetailAnimation.xcodeproj">
+               BuildableName = "SYRefresh.app"
+               BlueprintName = "SYRefresh"
+               ReferencedContainer = "container:SYRefresh.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2A2162811EBDBBD600F0EE46"
-               BuildableName = "SYShopDetailAnimationTests.xctest"
-               BlueprintName = "SYShopDetailAnimationTests"
-               ReferencedContainer = "container:SYShopDetailAnimation.xcodeproj">
+               BuildableName = "SYRefreshTests.xctest"
+               BlueprintName = "SYRefreshTests"
+               ReferencedContainer = "container:SYRefresh.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2A21628C1EBDBBD600F0EE46"
-               BuildableName = "SYShopDetailAnimationUITests.xctest"
-               BlueprintName = "SYShopDetailAnimationUITests"
-               ReferencedContainer = "container:SYShopDetailAnimation.xcodeproj">
+               BuildableName = "SYRefreshUITests.xctest"
+               BlueprintName = "SYRefreshUITests"
+               ReferencedContainer = "container:SYRefresh.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -53,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2A2162681EBDBBD600F0EE46"
-            BuildableName = "SYShopDetailAnimation.app"
-            BlueprintName = "SYShopDetailAnimation"
-            ReferencedContainer = "container:SYShopDetailAnimation.xcodeproj">
+            BuildableName = "SYRefresh.app"
+            BlueprintName = "SYRefresh"
+            ReferencedContainer = "container:SYRefresh.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2A2162681EBDBBD600F0EE46"
-            BuildableName = "SYShopDetailAnimation.app"
-            BlueprintName = "SYShopDetailAnimation"
-            ReferencedContainer = "container:SYShopDetailAnimation.xcodeproj">
+            BuildableName = "SYRefresh.app"
+            BlueprintName = "SYRefresh"
+            ReferencedContainer = "container:SYRefresh.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,9 +95,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2A2162681EBDBBD600F0EE46"
-            BuildableName = "SYShopDetailAnimation.app"
-            BlueprintName = "SYShopDetailAnimation"
-            ReferencedContainer = "container:SYShopDetailAnimation.xcodeproj">
+            BuildableName = "SYRefresh.app"
+            BlueprintName = "SYRefresh"
+            ReferencedContainer = "container:SYRefresh.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

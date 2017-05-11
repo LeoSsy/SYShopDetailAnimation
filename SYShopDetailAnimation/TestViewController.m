@@ -103,6 +103,7 @@ static const CGFloat titleW = 40;
     self.navigationItem.titleView = self.titleView;
     UIButton *backBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, titleW, titleW)];
     [backBtn setImage:[UIImage imageNamed:@"back"] forState:UIControlStateNormal];
+    [backBtn addTarget:self action:@selector(backBtnClick) forControlEvents:UIControlEventTouchDown];
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:backBtn];
     [[UINavigationBar appearance] setBackgroundImage:[self createImageWithColor:[[UIColor whiteColor] colorWithAlphaComponent:0.3]] forBarMetrics:UIBarMetricsDefault];
     __weak typeof(self)weakself = self;
@@ -127,6 +128,11 @@ static const CGFloat titleW = 40;
         }
     };
     
+}
+
+- (void)backBtnClick
+{
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 @end

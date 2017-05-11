@@ -58,7 +58,7 @@
         SYTitleItem *item1 = [SYTitleItem itemWithTitle:@"上拉查看图文详情" color:[UIColor redColor]];
         SYTitleItem *item2 = [SYTitleItem itemWithTitle:@"释放查看图文详情" color:[UIColor greenColor]];
         SYTitleItem *item3 = [SYTitleItem itemWithTitle:@"" color:[UIColor purpleColor]];
-        _firstScrollView.sy_footer.hiddenArrow = YES;
+//        _firstScrollView.sy_footer.hiddenArrow = YES;
         [_firstScrollView.sy_footer setHeaderForState:SYRefreshViewStateIdle item:item1];
         [_firstScrollView.sy_footer setHeaderForState:SYRefreshViewPulling item:item2];
         [_firstScrollView.sy_footer setHeaderForState:SYRefreshViewRefreshing item:item3];

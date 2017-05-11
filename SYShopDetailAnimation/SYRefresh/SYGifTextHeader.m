@@ -46,13 +46,6 @@
     return header;
 }
 
-- (void)beginRefreshing
-{
-    [super beginRefreshing];
-    [self.gifItem updateState:YES];
-    [self.gifItem updateProgress:0.5];
-}
-
 - (void)setTextG:(NSString *)textG
 {
     _textG = textG;

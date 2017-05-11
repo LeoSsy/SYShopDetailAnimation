@@ -10,6 +10,19 @@
 #import "SYSYRefreshConst.h"
 #import <objc/runtime.h>
 
+@interface UIView(SY)
+@property(nonatomic ,assign) CGFloat left;
+@property(nonatomic ,assign) CGFloat top;
+@property(nonatomic ,assign) CGFloat width;
+@property(nonatomic ,assign) CGFloat height;
+@property(nonatomic ,assign,readonly) CGFloat right;
+@property(nonatomic ,assign,readonly) CGFloat bottom;
+@property(nonatomic ,assign) CGPoint center;
+@property(nonatomic ,assign) CGFloat centerX;
+@property(nonatomic ,assign) CGFloat centerY;
+@property(nonatomic ,assign) CGSize size;
+@end
+
 @implementation SYTitleItem
 + (instancetype)itemWithTitle:(NSString*)title color:(UIColor*)color
 {
@@ -248,8 +261,14 @@
             }else{
                 if (self.state == SYRefreshViewStateIdle&&offsetY>self.height) { //正数 往上拉
                     self.state = SYRefreshViewPulling;
+                    [UIView animateWithDuration:SYAnimationDuration animations:^{
+                        self.arrowView.transform = CGAffineTransformMakeRotation(0.000001 - M_PI);
+                    }];
                 }else if (self.state == SYRefreshViewPulling&&offsetY<self.height*0.82){//负数 往下弹
                     self.state = SYRefreshViewStateIdle;
+                    [UIView animateWithDuration:SYAnimationDuration animations:^{
+                        self.arrowView.transform = CGAffineTransformIdentity;
+                    }];
                 }
             }
         }else if (self.state == SYRefreshViewPulling){

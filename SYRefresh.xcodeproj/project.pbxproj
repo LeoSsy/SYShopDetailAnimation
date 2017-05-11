@@ -71,7 +71,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2A2162691EBDBBD600F0EE46 /* SYShopDetailAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SYShopDetailAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A2162691EBDBBD600F0EE46 /* SYRefresh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SYRefresh.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A21626D1EBDBBD600F0EE46 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2A21626F1EBDBBD600F0EE46 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2A2162701EBDBBD600F0EE46 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -81,10 +81,10 @@
 		2A2162781EBDBBD600F0EE46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2A21627B1EBDBBD600F0EE46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2A21627D1EBDBBD600F0EE46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2A2162821EBDBBD600F0EE46 /* SYShopDetailAnimationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SYShopDetailAnimationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A2162821EBDBBD600F0EE46 /* SYRefreshTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SYRefreshTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A2162861EBDBBD600F0EE46 /* SYShopDetailAnimationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYShopDetailAnimationTests.m; sourceTree = "<group>"; };
 		2A2162881EBDBBD600F0EE46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2A21628D1EBDBBD600F0EE46 /* SYShopDetailAnimationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SYShopDetailAnimationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A21628D1EBDBBD600F0EE46 /* SYRefreshUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SYRefreshUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A2162911EBDBBD600F0EE46 /* SYShopDetailAnimationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYShopDetailAnimationUITests.m; sourceTree = "<group>"; };
 		2A2162931EBDBBD600F0EE46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A21629F1EBDBC3500F0EE46 /* FistViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FistViewController.h; sourceTree = "<group>"; };
@@ -139,9 +139,9 @@
 		2A2162601EBDBBD600F0EE46 = {
 			isa = PBXGroup;
 			children = (
-				2A21626B1EBDBBD600F0EE46 /* SYShopDetailAnimation */,
-				2A2162851EBDBBD600F0EE46 /* SYShopDetailAnimationTests */,
-				2A2162901EBDBBD600F0EE46 /* SYShopDetailAnimationUITests */,
+				2A21626B1EBDBBD600F0EE46 /* SYRefreshDemo */,
+				2A2162851EBDBBD600F0EE46 /* SYRefreshDemoTests */,
+				2A2162901EBDBBD600F0EE46 /* SYRefreshDemoUITests */,
 				2A21626A1EBDBBD600F0EE46 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -149,14 +149,14 @@
 		2A21626A1EBDBBD600F0EE46 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2A2162691EBDBBD600F0EE46 /* SYShopDetailAnimation.app */,
-				2A2162821EBDBBD600F0EE46 /* SYShopDetailAnimationTests.xctest */,
-				2A21628D1EBDBBD600F0EE46 /* SYShopDetailAnimationUITests.xctest */,
+				2A2162691EBDBBD600F0EE46 /* SYRefresh.app */,
+				2A2162821EBDBBD600F0EE46 /* SYRefreshTests.xctest */,
+				2A21628D1EBDBBD600F0EE46 /* SYRefreshUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2A21626B1EBDBBD600F0EE46 /* SYShopDetailAnimation */ = {
+		2A21626B1EBDBBD600F0EE46 /* SYRefreshDemo */ = {
 			isa = PBXGroup;
 			children = (
 				2A5AC61D1EC2A497000AAECA /* SYRefresh */,
@@ -182,6 +182,7 @@
 				2A5AC6331EC30C47000AAECA /* demo-small.gif */,
 				2A21626C1EBDBBD600F0EE46 /* Supporting Files */,
 			);
+			name = SYRefreshDemo;
 			path = SYShopDetailAnimation;
 			sourceTree = "<group>";
 		};
@@ -193,21 +194,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		2A2162851EBDBBD600F0EE46 /* SYShopDetailAnimationTests */ = {
+		2A2162851EBDBBD600F0EE46 /* SYRefreshDemoTests */ = {
 			isa = PBXGroup;
 			children = (
 				2A2162861EBDBBD600F0EE46 /* SYShopDetailAnimationTests.m */,
 				2A2162881EBDBBD600F0EE46 /* Info.plist */,
 			);
+			name = SYRefreshDemoTests;
 			path = SYShopDetailAnimationTests;
 			sourceTree = "<group>";
 		};
-		2A2162901EBDBBD600F0EE46 /* SYShopDetailAnimationUITests */ = {
+		2A2162901EBDBBD600F0EE46 /* SYRefreshDemoUITests */ = {
 			isa = PBXGroup;
 			children = (
 				2A2162911EBDBBD600F0EE46 /* SYShopDetailAnimationUITests.m */,
 				2A2162931EBDBBD600F0EE46 /* Info.plist */,
 			);
+			name = SYRefreshDemoUITests;
 			path = SYShopDetailAnimationUITests;
 			sourceTree = "<group>";
 		};
@@ -231,9 +234,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2A2162681EBDBBD600F0EE46 /* SYShopDetailAnimation */ = {
+		2A2162681EBDBBD600F0EE46 /* SYRefresh */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2A2162961EBDBBD600F0EE46 /* Build configuration list for PBXNativeTarget "SYShopDetailAnimation" */;
+			buildConfigurationList = 2A2162961EBDBBD600F0EE46 /* Build configuration list for PBXNativeTarget "SYRefresh" */;
 			buildPhases = (
 				2A2162651EBDBBD600F0EE46 /* Sources */,
 				2A2162661EBDBBD600F0EE46 /* Frameworks */,
@@ -243,14 +246,14 @@
 			);
 			dependencies = (
 			);
-			name = SYShopDetailAnimation;
+			name = SYRefresh;
 			productName = SYShopDetailAnimation;
-			productReference = 2A2162691EBDBBD600F0EE46 /* SYShopDetailAnimation.app */;
+			productReference = 2A2162691EBDBBD600F0EE46 /* SYRefresh.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2A2162811EBDBBD600F0EE46 /* SYShopDetailAnimationTests */ = {
+		2A2162811EBDBBD600F0EE46 /* SYRefreshTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2A2162991EBDBBD600F0EE46 /* Build configuration list for PBXNativeTarget "SYShopDetailAnimationTests" */;
+			buildConfigurationList = 2A2162991EBDBBD600F0EE46 /* Build configuration list for PBXNativeTarget "SYRefreshTests" */;
 			buildPhases = (
 				2A21627E1EBDBBD600F0EE46 /* Sources */,
 				2A21627F1EBDBBD600F0EE46 /* Frameworks */,
@@ -261,14 +264,14 @@
 			dependencies = (
 				2A2162841EBDBBD600F0EE46 /* PBXTargetDependency */,
 			);
-			name = SYShopDetailAnimationTests;
+			name = SYRefreshTests;
 			productName = SYShopDetailAnimationTests;
-			productReference = 2A2162821EBDBBD600F0EE46 /* SYShopDetailAnimationTests.xctest */;
+			productReference = 2A2162821EBDBBD600F0EE46 /* SYRefreshTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		2A21628C1EBDBBD600F0EE46 /* SYShopDetailAnimationUITests */ = {
+		2A21628C1EBDBBD600F0EE46 /* SYRefreshUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2A21629C1EBDBBD600F0EE46 /* Build configuration list for PBXNativeTarget "SYShopDetailAnimationUITests" */;
+			buildConfigurationList = 2A21629C1EBDBBD600F0EE46 /* Build configuration list for PBXNativeTarget "SYRefreshUITests" */;
 			buildPhases = (
 				2A2162891EBDBBD600F0EE46 /* Sources */,
 				2A21628A1EBDBBD600F0EE46 /* Frameworks */,
@@ -279,9 +282,9 @@
 			dependencies = (
 				2A21628F1EBDBBD600F0EE46 /* PBXTargetDependency */,
 			);
-			name = SYShopDetailAnimationUITests;
+			name = SYRefreshUITests;
 			productName = SYShopDetailAnimationUITests;
-			productReference = 2A21628D1EBDBBD600F0EE46 /* SYShopDetailAnimationUITests.xctest */;
+			productReference = 2A21628D1EBDBBD600F0EE46 /* SYRefreshUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -309,7 +312,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2A2162641EBDBBD600F0EE46 /* Build configuration list for PBXProject "SYShopDetailAnimation" */;
+			buildConfigurationList = 2A2162641EBDBBD600F0EE46 /* Build configuration list for PBXProject "SYRefresh" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -322,9 +325,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2A2162681EBDBBD600F0EE46 /* SYShopDetailAnimation */,
-				2A2162811EBDBBD600F0EE46 /* SYShopDetailAnimationTests */,
-				2A21628C1EBDBBD600F0EE46 /* SYShopDetailAnimationUITests */,
+				2A2162681EBDBBD600F0EE46 /* SYRefresh */,
+				2A2162811EBDBBD600F0EE46 /* SYRefreshTests */,
+				2A21628C1EBDBBD600F0EE46 /* SYRefreshUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -424,12 +427,12 @@
 /* Begin PBXTargetDependency section */
 		2A2162841EBDBBD600F0EE46 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2A2162681EBDBBD600F0EE46 /* SYShopDetailAnimation */;
+			target = 2A2162681EBDBBD600F0EE46 /* SYRefresh */;
 			targetProxy = 2A2162831EBDBBD600F0EE46 /* PBXContainerItemProxy */;
 		};
 		2A21628F1EBDBBD600F0EE46 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2A2162681EBDBBD600F0EE46 /* SYShopDetailAnimation */;
+			target = 2A2162681EBDBBD600F0EE46 /* SYRefresh */;
 			targetProxy = 2A21628E1EBDBBD600F0EE46 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -576,7 +579,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.shusy.SYShopDetailAnimationTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SYShopDetailAnimation.app/SYShopDetailAnimation";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SYRefresh.app/SYRefresh";
 			};
 			name = Debug;
 		};
@@ -588,7 +591,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.shusy.SYShopDetailAnimationTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SYShopDetailAnimation.app/SYShopDetailAnimation";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SYRefresh.app/SYRefresh";
 			};
 			name = Release;
 		};
@@ -617,7 +620,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2A2162641EBDBBD600F0EE46 /* Build configuration list for PBXProject "SYShopDetailAnimation" */ = {
+		2A2162641EBDBBD600F0EE46 /* Build configuration list for PBXProject "SYRefresh" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2A2162941EBDBBD600F0EE46 /* Debug */,
@@ -626,7 +629,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2A2162961EBDBBD600F0EE46 /* Build configuration list for PBXNativeTarget "SYShopDetailAnimation" */ = {
+		2A2162961EBDBBD600F0EE46 /* Build configuration list for PBXNativeTarget "SYRefresh" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2A2162971EBDBBD600F0EE46 /* Debug */,
@@ -635,7 +638,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2A2162991EBDBBD600F0EE46 /* Build configuration list for PBXNativeTarget "SYShopDetailAnimationTests" */ = {
+		2A2162991EBDBBD600F0EE46 /* Build configuration list for PBXNativeTarget "SYRefreshTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2A21629A1EBDBBD600F0EE46 /* Debug */,
@@ -644,7 +647,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2A21629C1EBDBBD600F0EE46 /* Build configuration list for PBXNativeTarget "SYShopDetailAnimationUITests" */ = {
+		2A21629C1EBDBBD600F0EE46 /* Build configuration list for PBXNativeTarget "SYRefreshUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2A21629D1EBDBBD600F0EE46 /* Debug */,

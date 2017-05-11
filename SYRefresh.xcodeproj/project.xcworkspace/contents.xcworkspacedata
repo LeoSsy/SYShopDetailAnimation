@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:SYShopDetailAnimation.xcodeproj">
+      location = "self:/Users/shusy/Desktop/ios/SYShopDetailAnimation/SYRefresh.xcodeproj">
    </FileRef>
 </Workspace>
